@@ -385,3 +385,160 @@ class GradTTS(BaseModule):
         dec_cat = torch.cat((dec1[:, :, :i1], dec2[:, :, i2:j2], dec1[:, :, j1:y1_lengths]), dim=2)
 
         return dec1, dec2, dec_edit, dec_cat
+
+    @torch.no_grad()
+    def edit_content_with_melspec(
+        self,
+        melspec,
+        mel_len,
+        x,
+        x_lengths,
+        real_emphases,
+        emphases,
+        n_timesteps,
+        temperature=1.0,
+        stoc=False,
+        length_scale=1.0,
+        soften_mask=True,
+        n_soften_text=4,
+        n_soften=16,
+        amax=0.9,
+        amin=0.1,
+    ):
+        def _process_input(x, x_lengths):
+            x, x_lengths = self.relocate_input([x, x_lengths])
+
+            mu_x, logw, x_mask = self.encoder(x, x_lengths)
+
+            w = torch.exp(logw) * x_mask
+            w_ceil = torch.ceil(w) * length_scale
+            y_lengths = torch.clamp_min(torch.sum(w_ceil, [1, 2]), 1).long()
+            y_max_length = int(y_lengths.max())
+            print(y_max_length, length_scale)
+            y_max_length_ = fix_len_compatibility(y_max_length)
+
+            y_mask = (
+                sequence_mask(y_lengths, y_max_length_).unsqueeze(1).to(x_mask.dtype)
+            )
+            attn_mask = x_mask.unsqueeze(-1) * y_mask.unsqueeze(2)
+            attn = generate_path(w_ceil.squeeze(1), attn_mask.squeeze(1)).unsqueeze(1)
+
+            mu_y = torch.matmul(attn.squeeze(1).transpose(1, 2), mu_x.transpose(1, 2))
+            mu_y = mu_y.transpose(1, 2)  # [1, n_mels, T]
+            return mu_y, attn, y_mask, y_max_length, y_lengths
+
+        def _soften_juntions(
+            y_edit, y1, y2, y_edit_lengths, y1_lengths, y2_lengths, i1, j1, i2, j2
+        ):
+            for n in range(1, n_soften_text + 1):
+                alpha = (amax - amin) * (n_soften_text - n) / (n_soften_text - 1) + amin
+                if i1 - n >= 0 and i2 - n >= 0:
+                    y_edit[:, :, i1 - n] = (1 - alpha) * y1[:, :, i1 - n] + alpha * y2[
+                        :, :, i2 - n
+                    ]
+                if (
+                    i1 + (j2 - i2) + n < y_edit_lengths
+                    and j1 + (n - 1) < y1_lengths
+                    and j2 + (n - 1) < y2_lengths
+                ):
+                    y_edit[:, :, i1 + (j2 - i2) + (n - 1)] = (1 - alpha) * y1[
+                        :, :, j1 + (n - 1)
+                    ] + alpha * y2[:, :, j2 + (n - 1)]
+            return y_edit
+
+        assert len(x) == 1
+        # assert emphases1 is not None and emphases2 is not None
+        # assert len(emphases1) == 1 and len(emphases2) == 1
+
+        mu_y, attn, y_mask, y2_max_length, y2_lengths = _process_input(
+            x, x_lengths
+        )  # mu_y1: [1, n_mels, T]
+
+        mu_y = mu_y * torch.mean(melspec) / torch.mean(mu_y)  # volume normalization
+        attn = attn.squeeze()  # [N, T]
+
+        i = attn[: emphases[0][0]].sum().long().item() if emphases[0][0] > 0 else 0
+        j = attn[: emphases[0][1]].sum().long().item()
+
+        i1, j1 = real_emphases
+        y1_max_length = mel_len
+        y1_lengths = torch.tensor([y1_max_length]).cuda()
+        # Step 1. Direct concatenation
+        mu_y1_a, mu_y1_c = melspec[:, :, :i1], melspec[:, :, j1:y1_lengths]
+        mu_y2_b = mu_y[:, :, i:j]
+        mu_y_edit = torch.cat((mu_y1_a, mu_y2_b, mu_y1_c), dim=2)
+        y_edit_lengths = int(mu_y_edit.shape[2])
+
+        # Step 2. Soften junctions
+        mu_y_edit = _soften_juntions(
+            mu_y_edit,
+            melspec,
+            mu_y,
+            y_edit_lengths,
+            y2_lengths,
+            y2_max_length,
+            i1,
+            j1,
+            i,
+            j,
+        )
+
+        y_edit_length_ = fix_len_compatibility_text_edit(y_edit_lengths)
+        y_edit_lengths_tensor = torch.tensor([y_edit_lengths]).long().to(x.device)
+        y_edit_mask_for_scorenet = (
+            sequence_mask(y_edit_lengths_tensor, y_edit_length_)
+            .unsqueeze(1)
+            .to(mu_y.dtype)
+        )
+
+        eps1 = torch.randn_like(melspec, device=mu_y.device) / temperature
+        eps2 = torch.randn_like(mu_y, device=mu_y.device) / temperature
+        eps_edit = torch.cat(
+            (eps1[:, :, :i1], eps2[:, :, i:j], eps1[:, :, j1:y1_lengths]), dim=2
+        )
+        z1 = melspec + eps1
+        z2 = mu_y + eps2
+        z_edit = mu_y_edit + eps_edit
+
+        if z_edit.shape[2] < y_edit_length_:
+            pad = y_edit_length_ - z_edit.shape[2]
+            zeros = torch.zeros_like(z_edit[:, :, :pad])
+            z_edit = torch.cat((z_edit, zeros), dim=2)
+            mu_y_edit = torch.cat((mu_y_edit, zeros), dim=2)
+        elif z_edit.shape[2] > y_edit_length_:
+            res = z_edit.shape[2] - y_edit_length_
+            z_edit = z_edit[:, :, :-res]
+            mu_y_edit = mu_y_edit[:, :, :-res]
+
+        y_edit_mask_for_gradient = torch.zeros_like(mu_y_edit[:, :1, :])
+        y_edit_mask_for_gradient[:, :, i1 : i1 + (j - i)] = 1
+
+        y1_mask = torch.ones(1, 1, y1_max_length).cuda()
+        dec1 = self.decoder(z1, y1_mask, melspec, n_timesteps, stoc)
+        dec2, dec_edit = self.decoder.double_forward_text(
+            z2,
+            z_edit,
+            mu_y,
+            mu_y_edit,
+            y_mask,
+            y_edit_mask_for_scorenet,
+            y_edit_mask_for_gradient,
+            i1,
+            j1,
+            i,
+            j,
+            n_timesteps,
+            stoc,
+            soften_mask,
+            n_soften,
+        )
+
+        dec1 = dec1[:, :, :y1_max_length]
+        dec2 = dec2[:, :, :y2_max_length]
+        dec_edit = dec_edit[:, :, :y_edit_lengths]
+        dec_cat = torch.cat(
+            (melspec[:, :, :i1], dec2[:, :, i:j], melspec[:, :, j1:y1_lengths]), dim=2
+        )
+        return dec1, dec2, dec_edit, dec_cat
+
+        # return melspec, dec2, dec_edit, dec_cat

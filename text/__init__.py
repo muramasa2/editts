@@ -1,8 +1,12 @@
 """ from https://github.com/keithito/tacotron """
 
 import re
+import numpy as np
 from text import cleaners
 from text.symbols import symbols
+from espnet2.text.cleaner import TextCleaner
+from espnet2.text.phoneme_tokenizer import PhonemeTokenizer
+from espnet2.text.token_id_converter import TokenIDConverter
 
 
 _symbol_to_id = {s: i for i, s in enumerate(symbols)}
@@ -61,6 +65,61 @@ def text_to_sequence(text, cleaner_names=["english_cleaners"], dictionary=None):
         sequence = sequence[:-1] if sequence[-1] == space[0] else sequence
     return sequence
 
+def ja_text_to_sequence(text, transcript_token_list, unk_symbol: str = "<unk>"):
+    """Converts a string of text to a sequence of IDs corresponding to the symbols in the text.
+    The text can optionally have ARPAbet sequences enclosed in curly braces embedded
+    in it. For example, "Turn left on {HH AW1 S S T AH0 N} Street."
+    Args:
+      text: string to convert to a sequence
+      cleaner_names: names of the cleaner functions to run the text through
+      dictionary: arpabet class with arpabet dictionary
+    Returns:
+      List of integers corresponding to the symbols in the text
+    """
+    transcript_token_id_converter = TokenIDConverter(
+        token_list=transcript_token_list,
+        unk_symbol=unk_symbol,
+    )
+
+    tokenizer = PhonemeTokenizer(
+        g2p_type="pyopenjtalk_prosody",
+        non_linguistic_symbols=None,
+        space_symbol="<space>",
+        remove_non_linguistic_symbols=False,
+    )
+
+    text_cleaner = TextCleaner("jaconv")
+    text = text_cleaner(text)
+    tokens = tokenizer.text2tokens(text)
+    text_ints = transcript_token_id_converter.tokens2ids(tokens)
+    sequence = np.array(text_ints, dtype=np.int64)
+
+    return sequence
+
+
+def ja_phonemes_to_sequence(tokens, transcript_token_list, unk_symbol: str = "<unk>"):
+    """Converts a string of text to a sequence of IDs corresponding to the symbols in the text.
+    The text can optionally have ARPAbet sequences enclosed in curly braces embedded
+    in it. For example, "Turn left on {HH AW1 S S T AH0 N} Street."
+    Args:
+      text: string to convert to a sequence
+      cleaner_names: names of the cleaner functions to run the text through
+      dictionary: arpabet class with arpabet dictionary
+    Returns:
+      List of integers corresponding to the symbols in the text
+    """
+    tokens = tokens.split()
+    transcript_token_id_converter = TokenIDConverter(
+        token_list=transcript_token_list,
+        unk_symbol=unk_symbol,
+    )
+
+    # print(tokens)
+    text_ints = transcript_token_id_converter.tokens2ids(tokens)
+    sequence = np.array(text_ints, dtype=np.int64)
+
+    return sequence
+
 
 def text_to_sequence_for_editts(text, cleaner_names=["english_cleaners"], dictionary=None):
     sequence = []
@@ -109,6 +168,92 @@ def text_to_sequence_for_editts(text, cleaner_names=["english_cleaners"], dictio
 
     return sequence, final_emphases
 
+
+def ja_text_to_sequence_for_editts(
+    text, transcript_token_list, unk_symbol: str = "<unk>"
+):
+    sequence = []
+    emphases = []
+    final_emphases = []
+
+    transcript_token_id_converter = TokenIDConverter(
+        token_list=transcript_token_list,
+        unk_symbol=unk_symbol,
+    )
+
+    # tokenizer = PhonemeTokenizer(
+    #     g2p_type="pyopenjtalk_prosody",
+    #     non_linguistic_symbols=None,
+    #     space_symbol="<space>",
+    #     remove_non_linguistic_symbols=False,
+    # )
+    tokenizer = PhonemeTokenizer(
+        g2p_type="pyopenjtalk",
+        non_linguistic_symbols=None,
+        space_symbol="<space>",
+        remove_non_linguistic_symbols=False,
+    )
+    text_cleaner = TextCleaner("jaconv")
+    clean_text = text_cleaner(text)
+    text_for_seq = re.sub("\|", "", clean_text)
+    tokens = tokenizer.text2tokens(text_for_seq)
+    tokens.insert(0, "^")
+    tokens.append("$")
+    text_ints = transcript_token_id_converter.tokens2ids(tokens)
+    sequence = np.array(text_ints, dtype=np.int64)
+
+    i = 0
+    result = []
+    emphasis_interval = []
+    for c in clean_text:
+        if c == "|":
+            emphasis_interval.append(i)
+            if len(emphasis_interval) == 2:
+                emphases.append(emphasis_interval)
+                emphasis_interval = []
+        else:
+            i += 1
+            result.append(c)
+
+    final_emphases = []
+    for emphasis in emphases:
+        left_tokens = len(tokenizer.text2tokens(clean_text[: emphasis[0]]))
+        right_tokens = len(tokenizer.text2tokens(clean_text[: emphasis[1]]))
+        emphasis_interval = [left_tokens + 1, right_tokens + 1]
+        final_emphases.append(emphasis_interval)
+
+    return sequence, final_emphases
+
+
+def ja_phoneme_to_sequence_for_editts(
+    tokens, transcript_token_list, unk_symbol: str = "<unk>"
+):
+    emphases = []
+    text = re.sub("\|", "", tokens)
+    sequence = ja_phonemes_to_sequence(
+        tokens=re.sub("\|", "", tokens),
+        transcript_token_list=transcript_token_list,
+        unk_symbol=unk_symbol,
+    )
+
+    i = 0
+    emphasis_interval = []
+    # print(type(tokens))
+    # print(tokens.split())
+    tokens = tokens.split()
+    for token in tokens:
+        # print(token)
+        if token == "|":
+            emphasis_interval.append(i)
+            if len(emphasis_interval) == 2:
+                emphases.append(emphasis_interval)
+                emphasis_interval = []
+        else:
+            i += 1
+    # print(emphases)
+    # print("emphases:", text[emphases[0][0]])
+    # print("emphases:", text[emphases[0][1]])
+    return sequence, emphases
 
 def sequence_to_text(sequence):
     """Converts a sequence of IDs back to a string"""

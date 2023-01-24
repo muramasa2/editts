@@ -1,0 +1,5 @@
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_073.wav|^ n e cl t o d e k e N a N n o k a i k e ts u o m e z a s u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_046.wav|^ sh a ky o o n o u ts u k u sh i s a n i pau w a t a sh i w a gy o o t e N sh i t e sh i m a cl t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_021.wav|^ k a n o j o w a t i p I k a r u n a f e m i n i s U t o d e s u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_098.wav|^ ry o k o o ky a k u g a t a n o sh i m e r u y o o n i k u f u u sh i m a sh o o $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_092.wav|^ s a N k a k u k a N s u u n i o i t e pau py U t a g o r a s u n o t e e r i w a h i cl s u d e s u $

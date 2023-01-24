@@ -1,0 +1,100 @@
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_037.wav|^ t o m o d a ch i e pau ny u u i y a a k a a d o o o k u r o o $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_003.wav|^ m i N sh u u g a pau ty u r u r i i ky u u d e N n i sh i N ny u u sh i t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_062.wav|^ s o r e n i pau k o n o h o o g a pau k a r a d a n o t a m e ny a z u cl t o i i N d a k a r a n e $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_052.wav|^ m a k i y o o n i a sh i o f u m i i r e r u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_045.wav|^ n i h o N s e e f u k a r a n o pau hy a k u ch o o e N o k o e r u y o s a N y o o ky u u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_031.wav|^ d a g a pau ky o o o m a e g a k o k o e g o j u r a i n i n a cl t a n o w a pau d o N n a g o y o o n a n o k a n a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_015.wav|^ h o r u r o pau a r a pau t i t a r u cl f o t o y u u t o k u b e ts u n a o ry o o r i m o d e m a sh i t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_028.wav|^ b o s U t o N d e pau t o a r u ch o p u s u i y a e h a i cl t e y u u h a N o k u cl t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_032.wav|^ s a b u f u r a N ch a i z a a o f u y a sh i t e pau m e z a s e hy a k U t e N p o $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_030.wav|^ k a ts U t e h I t o r i d e k o k U f u n i sh i N ny u u sh I t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_060.wav|^ ch o k o n o z a i k o a cl t a k a n a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_067.wav|^ o y o s o pau r o cl py a k u m e e t o r u s a k i o pau u s e ts u d e s u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_063.wav|^ n a ts u y a s u m i n i pau t o r a a b e my u N e pau ry o k o o sh i t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_036.wav|^ w a t a sh i w a pau gy o cl t o m e o m i h i r a i t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_038.wav|^ k a s e e f u w a pau y a s u m i n i pau o sh a r e n a a u t a a w e a a n i m i o ts u ts u m i pau h I t o r i d e y a t a i o t a n o sh i m i m a sh I t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_044.wav|^ g a r u h a k a s e hy a k U t a i ch i k a k u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_072.wav|^ t o cl py o o sh i m o n a i h a n a sh i d a g a pau k e cl sh I t e u s o d e w a n a i $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_061.wav|^ o m e e pau k o n o sh I k o m i ny a a pau d o n o k u r e e j i k a N k a k a r u k a sh i cl t e cl k a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_055.wav|^ n u r u sh i a n o pau b e n e d i k u t U s u w a pau a p o r o N sh i N d e N o k o w a sh i pau b e n e d i k U t o k a i n o sh u u d o o i N o t a t e t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_057.wav|^ p a f u i i n o g u cl z u g a n o k o r a z u h e y a n i o ch i ts u i t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_018.wav|^ m o k U hy o o w a pau i cl t o o sh o o d e s u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_056.wav|^ ch o o d o s o n o t o k i pau d e s U t u p a a g o g a k o cl p u o m o cl t e t a ch i a g a r i m a sh i t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_053.wav|^ u a N d a a w o cl t o t a i m u ch u u w a pau i w a y u r u p a a t i i n o y o o d e h a r e y a k a d e s u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_085.wav|^ n i s e ky o o k a i n i d a m a s a r e r u n a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_013.wav|^ s e N h a cl py a k u n a n a j u u n a n a pau p u f e f a a n i y o r i pau sh i N t o o g e N sh o o g a h a cl k e N s a r e t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_080.wav|^ w a t a sh i t a ch i w a pau ch u u sh o o t e k i pau i sh I k i t e k i j i k o o h i t e e s u r u k o t o d e pau h o N t o o n o j i k o t o w a pau sh i N j i N i ch i n o d a t o y u u k o t o o sh i r u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_095.wav|^ sh o k u r i y o o n o h o ky u u g a ky u u m u d e a r u t o ts u t a e r a r e t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_096.wav|^ t e N j i k a i d e pau a n o s a k U h i N n o m i f u hy o o d a cl t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_043.wav|^ s o n o h o k a n i pau w a t a sh i n i d e k i r u k o t o w a n a k a cl t a n o d e s u pau y u r i e w a pau n a m i d a g o e n i n a cl t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_025.wav|^ sh o p e N h a u e r u t o pau n i i ch e n o t e ts u g a k u sh o o pau h o N d a n a k a r a t o r i d a sh I t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_076.wav|^ k u r e N p e ky o o t o o w a pau b u k o ts u n a o t o k o d a g a pau j i b u N n o g a k u m o N n o h i m i ts u n i w a pau f u k a k U h i t a cl t e i t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_007.wav|^ f u r a N s u j i N sh e f u t o pau n i h o N j i N sh e f u w a pau z e N z e N ch i g a u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_064.wav|^ k o k o d e i cl sh o n i pau w e e k U f i i r u d o n o o b a o m a cl t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_001.wav|^ o N n a n o k o g a pau k i cl k i u r e sh I s o o $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_082.wav|^ w a t a sh i w a t e h a j i m e n i pau d o o gy o o sh a k a r a h a n a sh i o k i k u d o ry o k u o sh i t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_066.wav|^ s a i sh o n o j o b u w a pau w o o r i a g a i i t o o m o i m a s u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_074.wav|^ k i r e a j i s u r u d o i p e t i i n a i f u w a pau ts u k a i g a cl t e g a y o i $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_040.wav|^ y a m a n o m u k o o n o my u u f e N n o h i t o t a ch i g a k o o g e k i o sh i k a k e t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_016.wav|^ f u e n o o t o g a n a r u t o pau u s a g i n o k i cl d o g a s a cl s o k U py o N t o h a n e t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_020.wav|^ a f U t a n u u N t i i o t a n o sh i m i m a sh o o $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_077.wav|^ sh i cl pau p o f u r i t a t e h i g e k u i s o r a s u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_071.wav|^ k e cl ky o k u n o t o k o r o pau o t a g a i g o j i cl p o hy a cl p o d a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_010.wav|^ k a g u sh o o n i N n o f i sh e r u w a pau n i g u r u m a t o k o u m a o k a sh I t e k u r e t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_017.wav|^ a n o ry o ky a k u w a pau u w a s a n o ky a f e n i i k u y o o d e s u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_033.wav|^ sh i k o k u d e o h e N r o o a N gy a sh i y o o $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_006.wav|^ j o g e N w a d e k i n a i t o pau dy u p a N w a i cl t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_042.wav|^ sh i r u b i u s u w a pau dy u b o a t o y o b a r e t a f u r a N s u n o y u g u n o o n o i e n i u m a r e t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_041.wav|^ b o s u n i a k o cl ky o o k a r a n o k o o g e k i n i y o r i pau j u u i ch i g a ts u n i pau w a r e y o o g a s e N ry o o s a r e t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_023.wav|^ f i r e N ts e pau p a d o b a pau v e n e ts i i a w a pau d o r e m o i t a r i a n o t o sh i d e s u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_051.wav|^ k a e r u g a py o k o py o k o t o b i m a w a cl t e i m a s u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_100.wav|^ ch i i s a i h o sh i o t a k u s a N e g a i t a pau m i z u n o m i g u r a s u w a y o k u a r u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_090.wav|^ ky a r i i b a cl g u w a ry o k o o n i h i cl s u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_014.wav|^ y u r e r u f e r i i n i n o r u n o w a pau w a t a sh i n i t o cl t e k u g i y o o d e s u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_027.wav|^ o m o i w a t a i r e o n u i d e pau a w a s e n i k i g a e r u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_034.wav|^ i ts u m o n o t o o r i pau gy a N gy a N n a k i d a sh i m a sh I t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_054.wav|^ s U p i r i cl ts u t o w a pau j o o ry u u sh u n o k o t o d e s u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_035.wav|^ s e N s e i w a pau t a cl t a m a m a ny u u s u o m i t e i m a sh I t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_065.wav|^ y a cl ts u n i n a r u w o r u t a a t o i cl sh o n i d e t a ky o o d a i g a i t a g a pau w o r u t a a d a k e h a cl k e N s a r e t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_078.wav|^ s u b e t e n o e m o n o o n o z o m i d o o r i n i n e r a u g e z u ts u g a a r u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_005.wav|^ r e j a N d o r u w a pau m i N sh u u o ty u r u r i i ky u u d e N n i m a n e i t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_094.wav|^ o m o ch a n o k a t a n a o m o cl t a sh o o n e N g a pau o hy a k u d o i sh i n i y o r i k a k a cl t e i r u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_091.wav|^ h o N b a N m a e w a pau m e ch a m e ch a f u a N n i n a r u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_004.wav|^ h a i ch I ky o o w a k o k u d e pau t o o o s a N r u u v e r u ty u u r u g a pau sh o o r i o o s a m e r a r e t a n o w a pau j i cl s a i pau o o n e ts u by o o n o o k a g e d a cl t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_039.wav|^ w o cl k a n o o t o m o n i w a pau sh i o z u k e n o ky u u r i g a a i m a s u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_022.wav|^ j o sh u t a ch I t o m i cl ts i i w a s a g a sh i t e i r u sh o r u i o m i ts u k e r a r e n a k a cl t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_086.wav|^ o y o s o hy a k u n e N m a e n i w a pau y a k u z a i t o sh I t e k U s u r i y a d e u cl t e i t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_075.wav|^ y u b i o k u w a e t e py u u t o h i t o k o e k u ch i b u e o f u i t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_084.wav|^ n i f u N d a k e n o o r u g a N e N s o o d e o w a cl t e sh i m a cl t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_011.wav|^ r o o k a r u r o s e N n i w a pau f a N m o o o i $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_029.wav|^ r o k U s u cl p o ky u u k e e o t o r a z u h a t a r a i t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_070.wav|^ w a r e w a r e w a pau t e N sh U k i y o o t o k a pau ch o o r o o ky o o k a i h a n o m o n o d e pau t e N sh U k i y o o t o g a t a s u u o sh i m e t e i r u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_024.wav|^ g a k U f u n i ts u g i n o y o o n i k a i t e a r u n o g a pau e e f e r i ch e d e s u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_069.wav|^ ky a k U h o N s a k U sh a pau p i e e r u o o by u r u n a N n o ky u u j i k u r e m a N g a pau sh u j i N n o sh o s a i n o t o o t a i s e ts u s o o n i h i r a i t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_012.wav|^ f e i N t o d e a i t e o k a w a sh I t e k a r a pau sh u u t o d e f i n i cl sh u sh i t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_093.wav|^ ch o m e e n a r a ny o N h a k a s e g a pau k a N j a t o s e cl sh I t e i t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_049.wav|^ sh a ch o o k a r a n o sh i j i d e s u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_050.wav|^ d o o m o pau k i m a g u r e t o y u u m o n o w a pau t a sh o o pau m e f i s U t i cl k u n a m o n o d e a r u r a sh i i $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_101.wav|^ e w a pau n e k o n o sh i cl p o d e m o a r u y o o n i pau s e N t a N o b u r u b u r u t o f u r u w a s e n a g a r a pau u g o i t e i k u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_088.wav|^ k o n o sh o m o ts u n i g o by u u g a a cl t e m o pau j u N i ts u d e n a i n a n i m o n o n i m o i N f e k U t o sh i n a i d e sh o o $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_079.wav|^ t a k o n o g u ny a g u ny a sh i t a k a N sh o k u g a i y a d a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_068.wav|^ sh i N t e N o o p u N n o r e s e p U sh o N n i pau t a k U s a N n o o ky a k U s a N o sh o o t a i sh i t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_102.wav|^ k a i t e N t o o sh o pau p u r i N g a i ch i b a N u r e t e i t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_089.wav|^ b u cl ky o o w a pau i N d o y u r a i n o sh u u k i y o o d e s u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_009.wav|^ f a sh i z u m u s e e ry o k u t o n o s o o ry o k u s e N n i n o z o m u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_099.wav|^ k o N n a j o o d a N n o y o o n a ny u u s u w a n a i $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_047.wav|^ s o p u r a n o k a sh i y u pau p o r i r a N d a ch o w a pau k a g e k i a i i d a n o t o k u b e ts u m e e k a sh u t o hy o o b a N d e s u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_059.wav|^ p o py u r a a n a s o f U t o o ts u k a i pau s e ky u a n a j o o t a i o f u cl ky u u s u r u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_073.wav|^ n e cl t o d e k e N a N n o k a i k e ts u o m e z a s u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_046.wav|^ sh a ky o o n o u ts u k u sh i s a n i pau w a t a sh i w a gy o o t e N sh i t e sh i m a cl t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_021.wav|^ k a n o j o w a t i p I k a r u n a f e m i n i s U t o d e s u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_098.wav|^ ry o k o o ky a k u g a t a n o sh i m e r u y o o n i k u f u u sh i m a sh o o $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_092.wav|^ s a N k a k u k a N s u u n i o i t e pau py U t a g o r a s u n o t e e r i w a h i cl s u d e s u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_087.wav|^ i cl s o pau ky a k U h o N k a o m e z a sh I t a h o o g a i i k a m o t o k a N g a e t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_026.wav|^ s a cl s o k u m e sh i ts U k a i z e N i N n i sh i r a s e m a sh o o $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_008.wav|^ ch u u g o k u n o g a i k o o d a N n i pau a t a cl sh e t o sh I t e h a k e N s a r e t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_048.wav|^ a n a t a n i w a pau s a i sh o pau hy a k U p o N d o w a t a sh i m a s u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_002.wav|^ ts a ts o n i ry o k o o sh i t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_083.wav|^ t o t e m o u r e sh i s o o n i pau py o N py o N h a n e t e d e t e i cl t a $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_081.wav|^ k a sh i m a my o o j i N g a k u g i d e s a sh i ts u r a n u i t e pau s a k a n a g a u g o k a n a i y o o n i sh i t e i r u $
+/data/dataset/takiyama/kamuro/wav48kHz16bit/211014_takiyama_Na_sozai_ITA_futuu1-102_097.wav|^ ky a k u j i N o m o t e n a s u n o w a t o o z e N d e s u $
